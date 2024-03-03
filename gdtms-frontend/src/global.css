@@ -1,0 +1,340 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* COLORES --------------------------------------------------- */
+
+.p1{
+  border: 3px solid red;
+}
+.p2{
+  border: 3px solid orange;
+}
+.p3{
+  border: 3px solid rgb(245, 214, 43);
+}
+.p4{
+  border: 3px solid lightskyblue;
+}
+
+/* Estilos y tal */
+
+.completa{
+  background-color: rgb(240, 240, 240);
+  border: 3px solid lightgray;
+}
+
+.completa .nombreTarea{
+  text-decoration: line-through;
+}
+
+
+
+/* 
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+}
+
+.cen{
+  align-items: center;
+  justify-content: center;
+}
+
+.btn{
+  user-select: none;
+  cursor: pointer;
+  background-color: cornflowerblue;
+  text-align: center;
+  padding: 10px 0px;
+  color: white;
+  width: 100%;
+}
+
+.btn:hover{
+  background-color: rgb(89, 127, 199);
+}
+
+.fondoModal{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,30%);
+}
+
+.desplegable{
+  justify-content: space-between;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 5px;
+  font-size: 20px;
+  color: black;
+}
+
+
+
+
+.contenedorMain .flechita{
+  cursor: pointer;
+  padding: 0px 10px;
+}
+
+.contenedorMain .flechita:hover{
+  color: cornflowerblue;
+}
+
+.contenedorMain .tareas{
+  overflow-y: auto;
+}
+
+.listaTareas{
+  gap: 5px;
+}
+
+.listaTareas.listaProximo{
+  padding-left: 10px;
+}
+
+.tareasTotales{
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+}
+
+.proximoAcciones{
+  margin: 10px;
+  gap: 10px;
+}
+
+.proximoAcciones *{
+  font-size: 18px;
+}
+
+
+
+.contenedorTarea{
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 70%);
+}
+
+.contenedorTarea .seccionTarea{
+  width: 100%;
+}
+
+.contenedorTarea .seccionTarea.superior{
+  justify-content: space-between;
+}
+
+.contenedorTarea .seccionTarea.medio{
+  gap: 10px;
+  align-items: center;
+}
+
+.contenedorTarea .estadoTarea{
+  width: 20px;
+  height: 20px;
+}
+
+.contenedorTarea .nombreTarea{
+  font-size: 20px;
+}
+
+.acciones{
+  gap: 10px;
+}
+
+.accion{
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.accion:hover{
+  cursor: pointer;
+  color: rgb(40, 40, 40);
+  background-color: rgb(235, 235, 235);
+}
+
+.contenedorTarea .fecha{
+  gap: 5px;
+}
+
+.contenedorTarea .etiqueta{
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+}
+
+.contenedorTarea .desc{
+  color: rgb(70, 70, 70);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.contenedorModal{
+  width: 400px;
+  height: 425px;
+  border-radius: 5px;
+  padding: 10px;
+  gap: 25px;
+  border: 3px solid rgb(30, 30, 100);
+  background-color: white;
+  font-size: 20px;
+}
+
+.contenedorModal label{
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 5px;
+}
+
+.contenedorModal .modalDesc{
+  resize: none;
+  width: 100%;
+  height: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedorModal .botones{
+  width: 100%;
+  gap: 10px;
+}
+
+.contenedorModal .btn{
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+
+
+.fondoFormulario{
+  height: 100vh;
+  width: 100vw;
+  background-color: cornflowerblue;
+}
+
+.contenedorFormulario.login{
+  width: 300px;
+  height: 400px;
+}
+
+.contenedorFormulario.register{
+  width: 400px;
+  height: 600px;
+}
+.contenedorFormulario{
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 70%);
+}
+
+.contenedorFormulario h1{
+  font-size: 40px;
+  color: darkcyan;
+}
+
+.contenedorFormulario form, .contenedorFormulario label{
+  gap: 10px;
+  font-size: 30px;
+  width: 100%;
+}
+
+.contenedorFormulario form{
+  height: 100%;
+  justify-content: space-between;
+}
+
+.contenedorFormulario label input{
+  font-size: 20px;
+  color: rgb(102, 96, 96);
+  border: none;
+  border-bottom: solid 1px cornflowerblue;
+  outline: none;
+}
+
+.contenedorFormulario label input:focus{
+  color: black;
+  border-bottom: solid 2px blue;
+}
+
+
+.contenedorFormulario .btn{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+  border: none;
+}
+
+.contenedorFormulario .cambiarForm{
+  cursor: pointer;
+  color: blue;
+  font-size: 15px;
+}
+
+.contenedorFormulario .cambiarForm:hover{
+  text-decoration:underline;
+}
+
+.msgError{
+  color: rgb(184, 11, 11);
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+
+
+.contenedorGestionarEtiquetas{
+  width: 100%;
+}
+
+.contenedorEtiqueta{
+  align-items: center;
+  justify-content: space-between;
+  border: 3px solid black;
+  padding: 15px 10px; 
+  margin: 5px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 70%);
+}
+
+.datosEtiqueta{
+  gap: 10px;
+}
+
+.datosEtiqueta span, .datosEtiqueta i{
+  font-size: 20px;
+}
+
+.contenedorEtiqueta .accion{
+  font-size: 20px;
+} */
