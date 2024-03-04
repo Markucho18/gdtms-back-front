@@ -82,7 +82,6 @@ export function TareasInbox() {
   };
 
   useEffect(() => {
-    console.log("Se ha renderizado <Inbox/>");
     getTareas();
   }, []);
 

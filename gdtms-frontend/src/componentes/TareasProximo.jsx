@@ -49,7 +49,6 @@ export function TareasProximo() {
 
 
   useEffect(() => {
-    console.log("Se ha renderizado <TareasProximo/>");
     getDatos()
   }, []);
 

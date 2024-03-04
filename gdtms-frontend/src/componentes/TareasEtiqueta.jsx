@@ -34,7 +34,6 @@ export function TareasEtiqueta({ id_etiqueta }) {
   };
 
   useEffect(() => {
-    console.log("Se ha renderizado <TareasEtiqueta/>");
     getTareas();
   }, [id_etiqueta]);
 

@@ -56,7 +56,6 @@ export function TareasCompletas() {
   };
 
   useEffect(() => {
-    console.log("Se ha renderizado <TareasCompletas/>");
     getTareas();
   }, []);
 

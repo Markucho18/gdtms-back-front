@@ -31,7 +31,6 @@ export function TareasHoy() {
   };
 
   useEffect(() => {
-    console.log("Se ha renderizado <TareasHoy/>");
     getTareas();
   }, []);
 

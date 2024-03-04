@@ -33,7 +33,6 @@ export function TareasBusqueda({ textoBusqueda }) {
   };
 
   useEffect(() => {
-    console.log("Se ha renderizado el componente <TareasBusqueda/>");
     getTareas();
   }, [textoBusqueda]);
 
